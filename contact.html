@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>✆Contact Us</title>
+</head>
+
+<body>
+  <!--That data in our form is encoded in plain text not utf-8 as set there by default, otherwise it gives text as +%concatenated or some weird way -->
+  <form class="" action="mailto:ren1902@gmail.com" method="post" enctype="text/plain">
+    <label for="POST_name">Name</label>
+    <input type="text" name="" value="">
+    <br>
+    <label for="POST_password">Password</label>
+    <input type="password" name="" value="">
+    <br>
+    <label for="POST_email">Email</label>
+    <input type="email" name="" value="">
+    <br>
+
+
+    <!-- Rows determine height of message box and columns determine width -->
+    <!-- Values are passed name = value , post means whatever we input will be passed to mailto client-->
+    <textarea name="POST_message" rows="8" cols="80"></textarea>
+    <br>
+    <label for="POST_gender">Select your gender</label>
+    <br>
+    <label for="">Male</label>
+    <input type="radio" name="gender" value="Male">
+    <label for="">Female</label>
+    <input type="radio" name="gender" value="Female">
+    <br>
+    <br>
+    <label for="POST_subject_taken">Select Languages known</label>
+    <br>
+    <table>
+      <tr>
+        <td>
+          Java<input type="checkbox" name="Java" value=""></<td>
+      </tr>
+      <tr>
+        <td>C++<input type="checkbox" name="C++" value=""></td>
+      </tr>
+      <tr>
+        <td>Swift<input type="checkbox" name="Swift" value=""></td>
+
+      </tr>
+
+    </table>
+    <input type="submit" name="" value="SUBMIT">
+
+  </form>
+
+</body>
+
+</html>
